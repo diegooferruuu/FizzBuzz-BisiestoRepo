@@ -11,4 +11,15 @@ function generarFizzBuzz(numero){
     return numero + "";
 }
 
-export default generarFizzBuzz
+function generarSecuencia(limite){
+    let cadena = ""; 
+    for (let i = 1; i <= limite; i++) {
+        cadena += generarFizzBuzz(i); 
+        if (i < limite) {
+            cadena += " "; 
+        }
+    }
+    return cadena;
+}
+
+export {generarFizzBuzz, generarSecuencia};
