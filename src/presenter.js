@@ -1,4 +1,4 @@
-import generarFizzBuzz from "./fizzbuzz";
+import {generarFizzBuzz, generarSecuencia} from "./fizzbuzz";
 
 const num = document.querySelector("#numero");
 const form = document.querySelector("#fizzbuzz-form");
@@ -9,5 +9,5 @@ form.addEventListener("submit", (event) => {
 
   const number = Number.parseInt(num.value);
 
-  div.innerHTML = "<p>" + generarFizzBuzz(number) + "</p>";
+  div.innerHTML = "<p>" + generarSecuencia(number) + "</p>";
 });
