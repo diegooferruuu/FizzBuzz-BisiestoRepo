@@ -7,5 +7,7 @@ describe("anioBisiesto", () => {
     it("Esperamos que el 2100 no sea bisiesto",() => {
         expect(anioBisiesto(2100)).toEqual("No bisiesto");
     });
-    
+    it("Esperamos que el 2008 sea bisiesto",() => {
+        expect(anioBisiesto(2008)).toEqual("Bisiesto");
+    });
 }); 
